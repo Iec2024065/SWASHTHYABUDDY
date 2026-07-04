@@ -1,6 +1,6 @@
-# CareConnect – College Health Center Web Application
+# SwashthyaBuddy – College Health Center Web Application
 
-CareConnect is a full-stack web application designed for college health centers, enabling students, doctors, and administrators to manage appointments, health records, and communication efficiently. The project features a modern React frontend (Material-UI), a secure Node.js/Express backend, and a MongoDB Atlas database. It is deployed with Netlify (frontend) and Render (backend).
+SwashthyaBuddy is a full-stack web application designed for college health centers, enabling students, doctors, and administrators to manage appointments, health records, and communication efficiently. The project features a modern React frontend (Material-UI), a secure Node.js/Express backend, and a MongoDB Atlas database. It is deployed with Netlify (frontend) and Render (backend).
 
 ---
 
