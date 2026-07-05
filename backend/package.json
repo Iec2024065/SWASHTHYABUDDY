@@ -1,7 +1,7 @@
 {
-  "name": "careconnect-backend",
+  "name": "swashthyabuddy-backend",
   "version": "1.0.0",
-  "description": "Backend for the CareConnect application",
+  "description": "Backend for the SwashthyaBuddy application",
   "main": "index.js",
   "scripts": {
     "start": "node server.js",

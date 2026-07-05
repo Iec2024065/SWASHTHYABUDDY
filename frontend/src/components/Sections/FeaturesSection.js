@@ -136,7 +136,7 @@ export default function Features() {
               animation: 'fadeIn 1s ease-out 0.3s both',
             }}
           >
-            Discover the key features of our CareConnect application, designed
+            Discover the key features of our SwashthyaBuddy application, designed
             to provide comprehensive care, security, actionable insights, and
             more.
           </Typography>

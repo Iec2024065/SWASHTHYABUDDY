@@ -55,7 +55,7 @@ const sendEmail = async (to, subject, htmlContent) => {
     const transporter = createTransporter()
     
     const mailOptions = {
-      from: `"CareConnect" <${process.env.EMAIL_USER}>`,
+      from: `"SwashthyaBuddy" <${process.env.EMAIL_USER}>`,
       to: to,
       subject: subject,
       html: htmlContent,
@@ -73,7 +73,7 @@ const sendEmail = async (to, subject, htmlContent) => {
 // Generate Jitsi video call link
 const generateJitsiLink = (patientName, doctorName, appointmentDate, appointmentTime) => {
   // Create a unique room name using patient name, doctor name, and appointment details
-  const roomName = `CareConnect-${patientName.replace(/\s+/g, '')}-${doctorName.replace(/\s+/g, '')}-${new Date(appointmentDate).toISOString().split('T')[0]}-${appointmentTime.replace(':', '')}`
+  const roomName = `SwashthyaBuddy-${patientName.replace(/\s+/g, '')}-${doctorName.replace(/\s+/g, '')}-${new Date(appointmentDate).toISOString().split('T')[0]}-${appointmentTime.replace(':', '')}`
   // Remove special characters and make it URL safe
   const sanitizedRoomName = roomName.replace(/[^a-zA-Z0-9-]/g, '')
   return `https://meet.jit.si/${sanitizedRoomName}`
@@ -81,7 +81,7 @@ const generateJitsiLink = (patientName, doctorName, appointmentDate, appointment
 
 // Send appointment approval email to patient
 const sendAppointmentApprovalEmail = async (patientEmail, patientName, doctorName, scheduledDate, scheduledTime, doctorResponse, meetingType) => {
-  const subject = 'Appointment Approved - CareConnect'
+  const subject = 'Appointment Approved - SwashthyaBuddy'
   const meetingTypeText = meetingType === 'online' ? 'Online Video Call' : 'In-Person Meeting'
   
   let meetingInstructions = ''
@@ -124,9 +124,9 @@ const sendAppointmentApprovalEmail = async (patientEmail, patientName, doctorNam
       ${videoCallSection}
       
       <p>${meetingInstructions}</p>
-      <p>If you need to reschedule or have any questions, please contact us through the CareConnect platform.</p>
+      <p>If you need to reschedule or have any questions, please contact us through the SwashthyaBuddy platform.</p>
       
-      <p>Best regards,<br>The CareConnect Team</p>
+      <p>Best regards,<br>The SwashthyaBuddy Team</p>
     </div>
   `
   
@@ -135,7 +135,7 @@ const sendAppointmentApprovalEmail = async (patientEmail, patientName, doctorNam
 
 // Send appointment approval confirmation to doctor
 const sendDoctorConfirmationEmail = async (doctorEmail, doctorName, patientName, scheduledDate, scheduledTime, meetingType) => {
-  const subject = 'Appointment Confirmation - CareConnect'
+  const subject = 'Appointment Confirmation - SwashthyaBuddy'
   const meetingTypeText = meetingType === 'online' ? 'Online Video Call' : 'In-Person Meeting'
   
   let videoCallSection = ''
@@ -172,9 +172,9 @@ const sendDoctorConfirmationEmail = async (doctorEmail, doctorName, patientName,
       ${videoCallSection}
       
       <p>The patient has been notified about the approval.</p>
-      <p>You can manage your appointments through the CareConnect doctor portal.</p>
+      <p>You can manage your appointments through the SwashthyaBuddy doctor portal.</p>
       
-      <p>Best regards,<br>The CareConnect Team</p>
+      <p>Best regards,<br>The SwashthyaBuddy Team</p>
     </div>
   `
   
@@ -183,7 +183,7 @@ const sendDoctorConfirmationEmail = async (doctorEmail, doctorName, patientName,
 
 // Send appointment rejection email to patient
 const sendAppointmentRejectionEmail = async (patientEmail, patientName, doctorName, reason) => {
-  const subject = 'Appointment Update - CareConnect'
+  const subject = 'Appointment Update - SwashthyaBuddy'
   const htmlContent = `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
       <h2 style="color: #f44336;">Appointment Update</h2>
@@ -205,7 +205,7 @@ const sendAppointmentRejectionEmail = async (patientEmail, patientName, doctorNa
       
       <p>Thank you for your understanding.</p>
       
-      <p>Best regards,<br>The CareConnect Team</p>
+      <p>Best regards,<br>The SwashthyaBuddy Team</p>
     </div>
   `
   

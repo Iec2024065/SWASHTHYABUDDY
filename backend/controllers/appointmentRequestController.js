@@ -9,7 +9,7 @@ const {
 // Generate Jitsi video call link
 const generateJitsiLink = (patientName, doctorName, appointmentDate, appointmentTime) => {
   // Create a unique room name using patient name, doctor name, and appointment details
-  const roomName = `CareConnect-${patientName.replace(/\s+/g, '')}-${doctorName.replace(/\s+/g, '')}-${new Date(appointmentDate).toISOString().split('T')[0]}-${appointmentTime.replace(':', '')}`
+  const roomName = `SwashthyaBuddy-${patientName.replace(/\s+/g, '')}-${doctorName.replace(/\s+/g, '')}-${new Date(appointmentDate).toISOString().split('T')[0]}-${appointmentTime.replace(':', '')}`
   // Remove special characters and make it URL safe
   const sanitizedRoomName = roomName.replace(/[^a-zA-Z0-9-]/g, '')
   return `https://meet.jit.si/${sanitizedRoomName}`

@@ -50,7 +50,7 @@ app.use(express.static(path.join(__dirname, 'public'))) //eslint-disable-line
 // Health check route
 app.get('/', (req, res) => {
   res.json({ 
-    message: 'CareConnect Backend API is running!', 
+    message: 'SwashthyaBuddy Backend API is running!', 
     status: 'healthy',
     timestamp: new Date().toISOString()
   })
