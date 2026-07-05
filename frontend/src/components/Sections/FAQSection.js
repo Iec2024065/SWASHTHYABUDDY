@@ -12,9 +12,9 @@ import './FAQSection.module.css'
 
 const faqs = [
   {
-    question: 'What is Care Connect?',
+    question: 'What is SwashthyaBuddy?',
     answer:
-      'Care Connect is a comprehensive healthcare platform designed to help you manage your health by booking appointments, checking symptoms, and connecting with healthcare professionals seamlessly.',
+      'SwashthyaBuddy is a comprehensive healthcare platform designed to help you manage your health by booking appointments, checking symptoms, and connecting with healthcare professionals seamlessly.',
   },
   {
     question: 'How do I book an appointment?',
@@ -22,9 +22,9 @@ const faqs = [
       'You can book an appointment by navigating to the "Appointments" section, selecting your preferred doctor, and choosing a suitable time slot from their available schedule.',
   },
   {
-    question: 'Can I check my symptoms using Care Connect?',
+    question: 'Can I check my symptoms using SwashthyaBuddy?',
     answer:
-      'Yes, Care Connect offers an advanced symptom checker feature where you can enter your symptoms and receive preliminary advice. However, this should not replace professional medical consultation.',
+      'Yes, SwashthyaBuddy offers an advanced symptom checker feature where you can enter your symptoms and receive preliminary advice. However, this should not replace professional medical consultation.',
   },
   {
     question: 'How do I update my profile?',

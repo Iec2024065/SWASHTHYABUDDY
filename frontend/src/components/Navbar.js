@@ -77,7 +77,7 @@ const Navbar = () => {
               },
             }}
           >
-            Care Connect
+            SwashthyaBuddy
           </Typography>
 
           <Stack direction="row" spacing={1}>

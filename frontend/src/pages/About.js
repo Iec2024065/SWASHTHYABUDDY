@@ -24,7 +24,7 @@ const About = () => {
             mb: 4,
           }}
         >
-          About Care Connect
+          About SwashthyaBuddy
         </Typography>
 
         <Typography
@@ -173,7 +173,7 @@ const About = () => {
             gutterBottom
             sx={{ color: '#185a9d', fontWeight: 700 }}
           >
-            Why Choose Care Connect?
+            Why Choose SwashthyaBuddy?
           </Typography>
           <Grid container spacing={4} sx={{ mt: 2 }}>
             {[

@@ -18,7 +18,7 @@ function Copyright() {
     <Typography variant="body2" sx={{ color: 'rgba(255,255,255,0.7)' }}>
       {'Copyright © '}
       <Link color="inherit" href="/" sx={{ textDecoration: 'none' }}>
-        Care Connect
+        SwashthyaBuddy
       </Link>{' '}
       {new Date().getFullYear()}
     </Typography>
@@ -101,7 +101,7 @@ export default function Footer() {
                   WebkitTextFillColor: 'transparent',
                 }}
               >
-                Care Connect
+                SwashthyaBuddy
               </Typography>
               <Typography
                 variant="body2"

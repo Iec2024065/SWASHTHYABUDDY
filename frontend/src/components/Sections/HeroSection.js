@@ -97,7 +97,7 @@ export default function Hero() {
               animation: 'fadeInDown 1s ease-out',
             }}
           >
-            Welcome to Care Connect
+            Welcome to SwashthyaBuddy
           </Typography>
           <Typography
             textAlign="center"
